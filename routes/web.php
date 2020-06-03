@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/redirect/{provider}','SocialAuthController@redirectToProvider')->name('social_login');
+Route::get('{provider}/callback','SocialAuthController@handleProviderCallback')->name('social_callback');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
