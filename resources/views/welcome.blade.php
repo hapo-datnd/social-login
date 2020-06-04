@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="{{ route('social_login', 'google') }}">Login in with Google</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="{{ route('social_login', 'facebook') }}">Login in with Facebook</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
